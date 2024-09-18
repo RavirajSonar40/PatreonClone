@@ -1,0 +1,111 @@
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    color: black;
+    background-color: #f3f6f9;
+}
+
+.pageTitle {
+    text-align: center;
+    color: black;
+}
+
+.noPosts {
+    text-align: center;
+    color: black;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+}
+
+.postCard {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: black;
+}
+
+.postHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    color: black;
+}
+
+.postDetails {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.creatorName {
+    font-size: 1.2em;
+    margin: 0;
+    color: black;
+}
+
+.postDate {
+    font-size: 0.9em;
+    color: #555;
+    color: black;
+}
+
+.postTitle {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: black;
+}
+
+.postContent {
+    font-size: 1em;
+    line-height: 1.6;
+    color: black;
+}
+
+.postImage {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    color: black;
+}
+
+.postActions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    color: black;
+}
+
+.actionButton {
+    background: #0073b1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background 0.3s;
+}
+
+.actionButton:hover {
+    background: #005582;
+}

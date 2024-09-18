@@ -1,0 +1,32 @@
+/* src/styles/posts.css */
+
+.posts-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.post-item h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.post-item p {
+    margin: 10px 0;
+}
+
+.post-item span {
+    color: #666;
+}

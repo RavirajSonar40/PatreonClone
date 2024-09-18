@@ -1,0 +1,162 @@
+/* PollPage.module.css */
+
+.container {
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    box-sizing: border-box;
+    gap: 20px; /* Add gap between sections */
+}
+.pollHeader{
+    display: flex;
+}
+.creatorName{
+    margin: 5px;
+    font-size: larger;
+    top: 10px;
+}
+.creatorProfile{
+    width: 30px;
+    margin: 5px;
+}
+.createPollSection, .activePollsSection {
+    width: 100%;
+    max-width: 600px; /* Set a max width for better readability */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    box-sizing: border-box;
+    overflow: auto; /* Ensure content inside these sections can scroll */
+    height: calc(100vh - 80px); /* Adjust height to fit within viewport minus some padding */
+}
+
+.createPollSection {
+    /* Adjust the maximum height as needed */
+}
+
+.activePollsSection {
+    /* Adjust the maximum height as needed */
+}
+
+.heading {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #333;
+    border-bottom: 2px solid #0070f3;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-weight: bold; /* Make heading bold */
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.optionsContainer {
+    margin-bottom: 10px;
+}
+
+.option {
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+    outline: none;
+    margin: 10px 0; /* Adjust margin for consistency */
+    font-size: 16px; /* Adjust font size for better readability */
+}
+
+.input:focus {
+    border-color: #0070f3;
+    box-shadow: 0 0 5px rgba(0, 112, 243, 0.5); /* Add shadow on focus */
+}
+
+.addButton, .button {
+    margin-top: 10px;
+    padding: 8px 15px; /* Adjust the padding for smaller buttons */
+    font-size: 14px; /* Smaller font size */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Add spacing between the buttons */
+}
+
+.addButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+}
+
+.poll {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.pollQuestion {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #0070f3;
+    font-weight: bold;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.voteButton {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 16px; /* Slightly larger font size */
+}
+
+.voteButton:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+
+.percentage {
+    font-size: 16px;
+    color: #0070f3;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .createPollSection, .activePollsSection {
+        width: 90%;
+        max-width: none; /* Remove max-width for mobile */
+    }
+}
